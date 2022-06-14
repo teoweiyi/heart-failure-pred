@@ -8,7 +8,7 @@ The sections below document the workflow of deploying a machine learning model t
 I found this [tutorial](https://www.youtube.com/watch?v=qNF1HqBvpGE&t=3832s) particularly useful in creating a [Flask](https://flask.palletsprojects.com/en/2.1.x/quickstart/) machine learning application. The main steps are:
 - Create a ML model (I have previously performed [EDA](https://www.kaggle.com/code/teoweiyi/heart-failure-dataset-eda/notebook) and [model predictions](https://www.kaggle.com/code/teoweiyi/heart-failure-prediction/notebook))
 - Save the ML model as a .joblib file.
-- Create a Flask instance and use the route() decorator to trigger our defined function.
+- Create a Flask instance and use the route() decorator to trigger your defined function.
 - Define a function with:
   - 'GET' and 'POST' methods
   - Prediction based on user input
@@ -33,7 +33,7 @@ git push heroku main
 ```
 
 ## Bonus: Dockerize A Flask Application
-I also learnt how to dockerize my flask application, though it appears that a docker container is not necessary for deployment on heroku according to the tutorial I followerd.
+I also learnt how to dockerize my flask application, though it appears that a docker container is not necessary for deployment on heroku according to the tutorial I followed.
 
 More details on docker containers can be found [here](https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/). It is relatively simple to dockerize a flask application, using the code below and saving it in a file named "Dockerfile":
 ```
@@ -56,11 +56,11 @@ To start a virtual environment:
 ```
 source .env/bin/activate
 ```
-To find out versions of installed modules:
+To find out what the versions of installed modules are:
 ```
 pip freeze
 ```
-To run your app in development mode.
+To run your app in development mode:
 ```
 flask run
 ```
